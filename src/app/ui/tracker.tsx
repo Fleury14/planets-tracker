@@ -3,14 +3,37 @@
 import { useState } from "react";
 import { defaultKI } from "../lib/key-items";
 import { KIList } from "../lib/interfaces";
+import KeyItem from "./ki-component";
 
 export default function Tracker() {
 
     const [ki, setKI] = useState<KIList>(defaultKI)
 
+    const kiKeys = Object.keys(ki);
+
+    const KIarr = [];
+    for (const [key, val] of Object.entries(ki)) {
+        KIarr.push(
+            {key: key, val: val}
+        )
+    }
+       
+    
+
     return (
-        <div>
-            <p>Tracker</p>
+        <div className="tracker-container">
+            <div className="flex flex-wrap">
+                {KIarr.map(eachKI => {
+                    return (
+                        <div key={eachKI.key} className="tracker-ki">
+                            <KeyItem
+                                name={eachKI.key}
+                                ki={eachKI.val}
+                            />
+                        </div>
+                    );
+                })}
+            </div>
         </div>
     )
 }

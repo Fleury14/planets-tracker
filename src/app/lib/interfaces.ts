@@ -32,4 +32,4 @@ interface KIList {
 
 }
 
-export type { KIList }
+export type { KIList, KI }

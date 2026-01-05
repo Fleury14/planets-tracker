@@ -13,7 +13,7 @@ const defaultKI: KIList = {
     },
     ridley: {
         hasItem: false,
-        iconColor: "Boss_Ridey_BW.png",
+        iconColor: "Boss_Ridley_BW.png",
         iconGrey: "Boss_Ridley.png",
     },
     longBeam: {
@@ -108,7 +108,7 @@ const defaultKI: KIList = {
     },
     stun: {
         hasItem: false,
-        iconColor: "Item_StunCore_BW.png",
+        iconColor: "Item_CoreCapacitor_BW.png",
         iconGrey: "Item_StunCore.png",
     },
     surge: {
