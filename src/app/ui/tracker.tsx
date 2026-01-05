@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { defaultKI } from "../lib/key-items";
 import { KIList } from "../lib/interfaces";
 import KeyItem from "./ki-component";
@@ -9,13 +9,21 @@ export default function Tracker() {
 
     const [ki, setKI] = useState<KIList>(defaultKI)
 
-    const kiKeys = Object.keys(ki);
-
     const KIarr = [];
     for (const [key, val] of Object.entries(ki)) {
         KIarr.push(
             {key: key, val: val}
         )
+    }
+
+    function toggleKI(target: string, setKI:Dispatch<SetStateAction<KIList>>) {
+        setKI((prevState: KIList) => ({
+            ...prevState,
+            [target]: {
+                ...prevState[target as keyof KIList],
+                hasItem: !prevState[target as keyof KIList].hasItem    
+            }
+        }));
     }
        
     
@@ -29,6 +37,7 @@ export default function Tracker() {
                             <KeyItem
                                 name={eachKI.key}
                                 ki={eachKI.val}
+                                toggle={() => toggleKI(eachKI.key, setKI)}
                             />
                         </div>
                     );

@@ -1,9 +1,10 @@
 import { KI } from '../lib/interfaces';
 import Image from 'next/image';
 
-export default function KeyItem({ ki, name }: { ki: KI, name: string}) {
+export default function KeyItem({ ki, name, toggle }: { ki: KI, name: string, toggle: (key: string) => void}) {
+    if (name==="longBeam") console.log(name, ki)
     return (
-        <a>
+        <a onClick={() => toggle(name)}>
             <Image
                 alt={`${ki.hasItem ? "color" : "grey"} icon for ${name}`}
                 src={`/images/${ki.hasItem ? ki.iconGrey : ki.iconColor}`}
