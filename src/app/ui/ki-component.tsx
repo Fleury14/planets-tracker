@@ -7,9 +7,10 @@ export default function KeyItem({ ki, name, toggle }: { ki: KI, name: string, to
         <a onClick={() => toggle(name)}>
             <Image
                 alt={`${ki.hasItem ? "color" : "grey"} icon for ${name}`}
-                src={`/images/${ki.hasItem ? ki.iconGrey : ki.iconColor}`}
+                src={`/images/${ki.iconGrey}`}
                 height={30}
                 width={30}
+                className={ki.hasItem ? "" : "grayscale"}
             />
         </a>
     );
