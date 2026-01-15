@@ -111,11 +111,6 @@ const defaultKI: KIList = {
         iconColor: "Item_CoreCapacitor_BW.png",
         iconGrey: "Item_StunCore.png",
     },
-    surge: {
-        hasItem: false,
-        iconColor: "Item_SurgeCore_BW.png",
-        iconGrey: "Item_SurgeCore.png",
-    },
 }
 
 export { defaultKI };
