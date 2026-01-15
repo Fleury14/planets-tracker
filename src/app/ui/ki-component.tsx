@@ -8,8 +8,8 @@ export default function KeyItem({ ki, name, toggle }: { ki: KI, name: string, to
             <Image
                 alt={`${ki.hasItem ? "color" : "grey"} icon for ${name}`}
                 src={`/images/${ki.iconGrey}`}
-                height={30}
-                width={30}
+                height={50}
+                width={50}
                 className={ki.hasItem ? "" : "grayscale"}
             />
         </a>

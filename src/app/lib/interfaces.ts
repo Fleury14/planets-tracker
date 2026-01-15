@@ -27,7 +27,6 @@ interface KIList {
     phazon: KI;
     sensor: KI;
     stun: KI;
-    surge: KI;
     // capacitor: KI;
 
 }
