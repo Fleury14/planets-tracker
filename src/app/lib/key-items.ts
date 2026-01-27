@@ -75,41 +75,57 @@ const defaultKI: KIList = {
         hasItem: false,
         iconColor: "Item_AegisCore_BW.png",
         iconGrey: "Item_AegisCore.png",
+        coreText: "AEGIS",
+        coreColor: "text-green-300"
     },
     crystal: {
         hasItem: false,
         iconColor: "Item_CrystalCore_BW.png",
         iconGrey: "Item_CrystalCore.png",
+        coreText: "CRYSTAL",
+        coreColor: "text-fuchsia-400"
     },
     chrono: {
         hasItem: false,
         iconColor: "Item_ChronoCore_BW.png",
         iconGrey: "Item_ChronoCore.png",
+        coreText: "CHRONO",
+        coreColor: "text-sky-500"
     },
     magnet: {
         hasItem: false,
         iconColor: "Item_MagnetCore_BW.png",
         iconGrey: "Item_MagnetCore.png",
+        coreText: "MAGNET",
+        coreColor: "text-yellow-200"
     },
     phantom: {
         hasItem: false,
         iconColor: "Item_PhantomCore_BW.png",
         iconGrey: "Item_PhantomCore.png",
+        coreText: "PHANTOM",
+        coreColor: "text-blue-500"
     },
     phazon: {
         hasItem: false,
         iconColor: "Item_PhazonCore_BW.png",
         iconGrey: "Item_PhazonCore.png",
+        coreText: "TEAL",
+        coreColor: "text-teal-500"
     },
     sensor: {
         hasItem: false,
         iconColor: "Item_SensorCore_BW.png",
         iconGrey: "Item_SensorCore.png",
+        coreText: "SENSOR",
+        coreColor: "text-orange-300"
     },
     stun: {
         hasItem: false,
         iconColor: "Item_CoreCapacitor_BW.png",
         iconGrey: "Item_StunCore.png",
+        coreText: "STUN",
+        coreColor: "text-red-300"
     },
 }
 
