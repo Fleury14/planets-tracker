@@ -27,17 +27,33 @@ export default function Tracker() {
     }
        
     
+    
 
     return (
         <div className="tracker-container">
             <div className="flex flex-wrap">
                 {KIarr.map(eachKI => {
                     return (
-                        <div key={eachKI.key} className="tracker-ki">
+                        <div key={eachKI.key}>
                             <KeyItem
                                 name={eachKI.key}
                                 ki={eachKI.val}
                                 toggle={() => toggleKI(eachKI.key, setKI)}
+                                cores={false}
+                            />
+                        </div>
+                    );
+                })}
+            </div>
+            <div className="flex flex-wrap mt-5">
+                {KIarr.map(eachKI => {
+                    return (
+                        <div key={eachKI.key}>
+                            <KeyItem
+                                name={eachKI.key}
+                                ki={eachKI.val}
+                                toggle={() => toggleKI(eachKI.key, setKI)}
+                                cores={true}
                             />
                         </div>
                     );

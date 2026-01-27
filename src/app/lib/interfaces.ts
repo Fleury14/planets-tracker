@@ -2,6 +2,8 @@ interface KI {
     hasItem: boolean;
     iconColor: string;
     iconGrey: string;
+    coreText?: string;
+    coreColor?: string;
 }
 
 interface KIList {
