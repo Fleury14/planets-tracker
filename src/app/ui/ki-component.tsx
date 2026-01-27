@@ -1,5 +1,11 @@
 import { KI } from '../lib/interfaces';
+import { VT323 } from 'next/font/google'
 import Image from 'next/image';
+
+const vt = VT323({
+    weight: '400',
+    subsets: ['latin'],
+})
 
 export default function KeyItem({ ki, name, toggle }: { ki: KI, name: string, toggle: (key: string) => void}) {
     if (name==="longBeam") console.log(name, ki)
@@ -12,6 +18,7 @@ export default function KeyItem({ ki, name, toggle }: { ki: KI, name: string, to
                 width={50}
                 className={ki.hasItem ? "" : "grayscale"}
             />
+            {ki.coreColor && ki.coreText && <p className={`${vt.className} ${ki.coreColor} text-md text-center ${ki.hasItem ? "" : "grayscale"}`}>{ki.coreText}</p>}
         </a>
     );
 }

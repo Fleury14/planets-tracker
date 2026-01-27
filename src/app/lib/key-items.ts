@@ -110,7 +110,7 @@ const defaultKI: KIList = {
         hasItem: false,
         iconColor: "Item_PhazonCore_BW.png",
         iconGrey: "Item_PhazonCore.png",
-        coreText: "TEAL",
+        coreText: "PHAZON",
         coreColor: "text-teal-500"
     },
     sensor: {
