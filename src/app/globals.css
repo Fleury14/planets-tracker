@@ -38,3 +38,31 @@ body {
 .core-text {
   text-align: center;
 }
+
+.bg-CRATERIA {
+  background-color: #2323D9;
+}
+
+.bg-BRINSTAR {
+  background-color: #2DD923;
+}
+
+.bg-NORFAIR {
+  background-color: #A82525;
+}
+
+.bg-KRAID {
+  background-color: #777;
+}
+
+.bg-RIDLEY {
+  background-color: #7A1C60;
+}
+
+.bg-WRECKEDSHIP {
+  background-color: #D68120;
+}
+
+.bg-TOURIAN {
+  background-color: #23C7Cf;
+}

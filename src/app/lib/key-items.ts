@@ -1,4 +1,5 @@
 import { KIList } from './interfaces';
+import { Zone  } from './enums';
 
 const defaultKI: KIList = {
     spore: {
@@ -129,4 +130,15 @@ const defaultKI: KIList = {
     },
 }
 
-export { defaultKI };
+const ZoneColors = {
+    [Zone.Brinstar]: '#2DD923',
+    [Zone.Crateria]: '#2323D9',
+    [Zone.Norfair]: '#A82525',
+    [Zone.Kraid]: '#777',
+    [Zone.Ridley]: '#7A1C60',
+    [Zone.WreckedShip]: '#D68120',
+    [Zone.Tourian]: '#23C7CF'
+
+}
+
+export { defaultKI , ZoneColors};
