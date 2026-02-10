@@ -39,12 +39,40 @@ body {
   text-align: center;
 }
 
+.text-CRATERIA {
+  color: #2323D9;
+}
+
+.text-BRINSTAR {
+  color: #197a14;
+}
+
+.text-NORFAIR {
+  color: #A82525;
+}
+
+.text-KRAID {
+  color: #777;
+}
+
+.text-RIDLEY {
+  color: #7A1C60;
+}
+
+.text-WRECKEDSHIP {
+  color: #8f5716;
+}
+
+.text-TOURIAN {
+  color: #19878d;
+}
+
 .bg-CRATERIA {
   background-color: #2323D9;
 }
 
 .bg-BRINSTAR {
-  background-color: #2DD923;
+  background-color: #197a14;
 }
 
 .bg-NORFAIR {
@@ -60,11 +88,11 @@ body {
 }
 
 .bg-WRECKEDSHIP {
-  background-color: #D68120;
+  background-color: #8f5716;
 }
 
 .bg-TOURIAN {
-  background-color: #23C7Cf;
+  background-color: #19878d;
 }
 
 .non-ws-button {

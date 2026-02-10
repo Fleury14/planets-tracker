@@ -3,9 +3,11 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import { defaultKI } from "../lib/key-items";
 import { KIList } from "../lib/interfaces";
+import { useZoneSelector } from "../lib/context/current-zone";
 import KeyItem from "./ki-component";
 
 export default function Tracker() {
+    const { currentZone } = useZoneSelector();
 
     const [ki, setKI] = useState<KIList>(defaultKI)
 
@@ -16,12 +18,18 @@ export default function Tracker() {
         )
     }
 
+    function isBoss(KI:string) {
+        console.log(KI === "kraid" || KI === "ridley" || KI === "spore")
+        return (KI === "kraid" || KI === "ridley" || KI === "spore")
+    }
+
     function toggleKI(target: string, setKI:Dispatch<SetStateAction<KIList>>) {
         setKI((prevState: KIList) => ({
             ...prevState,
             [target]: {
                 ...prevState[target as keyof KIList],
-                hasItem: !prevState[target as keyof KIList].hasItem    
+                hasItem: !prevState[target as keyof KIList].hasItem,
+                zone: isBoss(target) ? null : (prevState[target as keyof KIList].hasItem === false ? currentZone : null)
             }
         }));
     }
