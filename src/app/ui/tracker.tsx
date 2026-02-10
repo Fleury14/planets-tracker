@@ -1,6 +1,7 @@
 'use client'
 
 import { Dispatch, SetStateAction, useState } from "react";
+import ZoneCounter from "./zone-counter";
 import { defaultKI } from "../lib/key-items";
 import { KIList } from "../lib/interfaces";
 import { useZoneSelector } from "../lib/context/current-zone";
@@ -66,6 +67,9 @@ export default function Tracker() {
                         </div>
                     );
                 })}
+            </div>
+            <div>
+                < ZoneCounter kiList={ki} />
             </div>
         </div>
     )
