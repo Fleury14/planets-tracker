@@ -1,5 +1,8 @@
+"use client";
+
 import { Zone } from "../lib/enums";
 import { Press_Start_2P } from "next/font/google";
+import { useZoneSelector } from "../lib/context/current-zone";
 
 const pressStart = Press_Start_2P({
     subsets: ['latin'],
@@ -7,6 +10,9 @@ const pressStart = Press_Start_2P({
 })
 
 export default function ZoneSelector() {
+
+    const { currentZone, setCurrentZone } = useZoneSelector();
+
     return (
         <div className={`tracker-container ${pressStart.className}`}>
             <p className="text-center">ZONE SELECTOR</p>
@@ -25,6 +31,8 @@ export default function ZoneSelector() {
                     <button type="button" className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Tourian}`}>Tourian</button>
                 </div>
                 <button type="button" className={`text-xs m-3 px-3 py-2 rounded-base bg-${Zone.WreckedShip}`}>Wrecked Ship</button>
+                <p className="text-center">Selected Zone:</p>
+                <p className="text-center">{ currentZone }</p>
             </div>
             
                 
