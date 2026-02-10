@@ -11,6 +11,7 @@ interface KIList {
     spore: KI;
     kraid: KI;
     ridley: KI;
+    missles: KI;
     longBeam: KI;
     spazerBeam: KI;
     iceBeam: KI;

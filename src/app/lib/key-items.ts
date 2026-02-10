@@ -20,6 +20,12 @@ const defaultKI: KIList = {
         iconGrey: "Boss_Ridley.png",
         zone: null,
     },
+    missles: {
+        hasItem: false,
+        iconColor: "missle-nobg.png",
+        iconGrey: "missle-nobg.png",
+        zone: null,
+    },
     longBeam: {
         hasItem: false,
         iconColor: "Item_LongBeam_BW.png",
