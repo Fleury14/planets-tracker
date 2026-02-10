@@ -19,18 +19,60 @@ export default function ZoneSelector() {
             <p className="text-xs text-center">Select Zone then right click KI to highlight</p>
             <div>
                 <div className="flex">
-                    <button type="button" className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Brinstar}`}>Brinstar</button>
-                    <button type="button" className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Crateria}`}>Crateria</button>
+                    <button 
+                        type="button"
+                        className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Brinstar}`}
+                        onClick={() => setCurrentZone(Zone.Brinstar)}
+                    >
+                        Brinstar
+                    </button>
+                    <button 
+                        type="button"
+                        className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Crateria}`}
+                        onClick={() => setCurrentZone(Zone.Crateria)}
+                    >
+                        Crateria
+                    </button>
                 </div>    
                 <div className="flex">
-                    <button type="button" className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Norfair}`}>Norfair</button>
-                    <button type="button" className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Kraid}`}>Kraid</button>
+                    <button 
+                        type="button"
+                        className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Norfair}`}
+                        onClick={() => setCurrentZone(Zone.Norfair)}
+                    >
+                        Norfair
+                    </button>
+                    <button 
+                        type="button"
+                        className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Kraid}`}
+                        onClick={() => setCurrentZone(Zone.Kraid)}
+                    >
+                        Kraid
+                    </button>
                 </div>
                 <div className="flex">
-                    <button type="button" className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Ridley}`}>Ridley</button>
-                    <button type="button" className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Tourian}`}>Tourian</button>
+                    <button 
+                        type="button"
+                        className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Ridley}`}
+                        onClick={() => setCurrentZone(Zone.Ridley)}
+                    >
+                        Ridley
+                    </button>
+                    <button 
+                        type="button"
+                        className={`non-ws-button text-xs m-3 px-3 py-2 rounded-base bg-${Zone.Tourian}`}
+                        onClick={() => setCurrentZone(Zone.Tourian)}
+                    >
+                        Tourian
+                    </button>
                 </div>
-                <button type="button" className={`text-xs m-3 px-3 py-2 rounded-base bg-${Zone.WreckedShip}`}>Wrecked Ship</button>
+                <button 
+                    type="button"
+                    className={`text-xs m-3 px-3 py-2 rounded-base bg-${Zone.WreckedShip}`}
+                    onClick={() => setCurrentZone(Zone.WreckedShip)}
+                >
+                    Wrecked Ship
+                </button>
                 <p className="text-center">Selected Zone:</p>
                 <p className="text-center">{ currentZone }</p>
             </div>
