@@ -66,3 +66,7 @@ body {
 .bg-TOURIAN {
   background-color: #23C7Cf;
 }
+
+.non-ws-button {
+  width: 120px;
+}
