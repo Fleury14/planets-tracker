@@ -4,14 +4,14 @@ import { useState, createContext, useContext, Dispatch, SetStateAction } from "r
 import { Zone } from "../enums";
 
 type TZoneContext = {
-    currentZone: Zone;
-    setCurrentZone: Dispatch<SetStateAction<Zone>>;
+    currentZone: Zone | null;
+    setCurrentZone: Dispatch<SetStateAction<Zone | null>>;
 }
 
 const ZoneContext = createContext<TZoneContext | null>(null);
 
 const ZoneProvider = ({ children }: Readonly<{ children: React.ReactNode }>) => {
-    const [currentZone, setCurrentZone] = useState(Zone.Crateria);
+    const [currentZone, setCurrentZone] = useState<Zone | null>(Zone.Crateria);
 
     return (
         <ZoneContext.Provider value={{ currentZone, setCurrentZone }}>

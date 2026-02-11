@@ -16,8 +16,17 @@ export default function ZoneSelector() {
     return (
         <div className={`tracker-container ${pressStart.className}`}>
             <p className="text-center">ZONE SELECTOR</p>
-            <p className="text-xs text-center">Select Zone then right click KI to highlight</p>
+            <p className="text-xs text-center">Select Zone to highlight Core/KI</p>
             <div>
+                <div className="flex justify-center">
+                    <button
+                        type="button"
+                        className="non-ws-button text-xs m-3 px-3 py-2 border-1"
+                        onClick={() => setCurrentZone(null)}
+                    >
+                        Nothing
+                    </button>
+                </div>
                 <div className="flex">
                     <button 
                         type="button"
@@ -74,7 +83,7 @@ export default function ZoneSelector() {
                     Wrecked Ship
                 </button>
                 <p className="text-center">Selected Zone:</p>
-                <p className="text-center">{ currentZone }</p>
+                <p className="text-center">{ currentZone === null ? "NOTHING" : currentZone }</p>
             </div>
             
                 
