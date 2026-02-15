@@ -2,6 +2,7 @@ interface KI {
     hasItem: boolean;
     iconColor: string;
     iconGrey: string;
+    zone:string | null;
     coreText?: string;
     coreColor?: string;
 }
@@ -10,6 +11,7 @@ interface KIList {
     spore: KI;
     kraid: KI;
     ridley: KI;
+    missles: KI;
     longBeam: KI;
     spazerBeam: KI;
     iceBeam: KI;

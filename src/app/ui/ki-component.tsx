@@ -11,7 +11,7 @@ export default function KeyItem({ ki, name, toggle, cores }: { ki: KI, name: str
     if (cores && !ki.coreText) return null;
     if (!cores && !!ki.coreText) return null;
     return (
-        <div className="tracker-ki">
+        <div className={`tracker-ki ${ki.zone !== null ? "bg-" + ki.zone : ""}`}>
             <a onClick={() => toggle(name)}>
                 <Image
                     alt={`${ki.hasItem ? "color" : "grey"} icon for ${name}`}

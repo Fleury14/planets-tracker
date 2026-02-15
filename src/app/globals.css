@@ -6,12 +6,12 @@
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -37,4 +37,64 @@ body {
 
 .core-text {
   text-align: center;
+}
+
+.text-CRATERIA {
+  color: #3838d5;
+}
+
+.text-BRINSTAR {
+  color: #25ac1e;
+}
+
+.text-NORFAIR {
+  color: #A82525;
+}
+
+.text-KRAID {
+  color: #777;
+}
+
+.text-RIDLEY {
+  color: #8d399b;
+}
+
+.text-WRECKEDSHIP {
+  color: #c1751e;
+}
+
+.text-TOURIAN {
+  color: #26bbc3;
+}
+
+.bg-CRATERIA {
+  background-color: #2323D9;
+}
+
+.bg-BRINSTAR {
+  background-color: #197a14;
+}
+
+.bg-NORFAIR {
+  background-color: #A82525;
+}
+
+.bg-KRAID {
+  background-color: #777;
+}
+
+.bg-RIDLEY {
+  background-color: #6d1c7a;
+}
+
+.bg-WRECKEDSHIP {
+  background-color: #8f5716;
+}
+
+.bg-TOURIAN {
+  background-color: #19878d;
+}
+
+.non-ws-button {
+  width: 120px;
 }
