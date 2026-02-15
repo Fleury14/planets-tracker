@@ -11,7 +11,7 @@ type TZoneContext = {
 const ZoneContext = createContext<TZoneContext | null>(null);
 
 const ZoneProvider = ({ children }: Readonly<{ children: React.ReactNode }>) => {
-    const [currentZone, setCurrentZone] = useState<Zone | null>(Zone.Crateria);
+    const [currentZone, setCurrentZone] = useState<Zone | null>(null);
 
     return (
         <ZoneContext.Provider value={{ currentZone, setCurrentZone }}>
